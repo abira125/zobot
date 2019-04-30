@@ -127,6 +127,14 @@
       },
       {
         "intent": "restaurant_search",
+        "text": "great, looking for food"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "great. Looking for food"
+      },
+      {
+        "intent": "restaurant_search",
         "text": "great. need information on restaurants"
       },
       {

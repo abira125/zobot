@@ -2,10 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "location",
         "price",
         "email",
-        "cuisine"
+        "cuisine",
+        "location"
       ]
     },
     "action_check_location": {
@@ -40,7 +40,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190421-131632",
+  "trained_at": "20190421-175254",
   "rasa_core": "0.13.7",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"

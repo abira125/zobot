@@ -293,6 +293,16 @@
         "entities": []
       },
       {
+        "text": "great, looking for food",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "great. Looking for food",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
         "text": "great. need information on restaurants",
         "intent": "restaurant_search",
         "entities": []

@@ -7,5 +7,5 @@ policies:
   - name: FormPolicy
   - name: FallbackPolicy
     fallback_action_name: 'action_utter_fallback'
-    core_threshold: 0.5
-    nlu_threshold: 0.5
+    core_threshold: 0.6
+    nlu_threshold: 0.6
