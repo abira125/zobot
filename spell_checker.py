@@ -26,13 +26,15 @@ def known(words):
 	
 def edits1(word):
     "All edits that are one edit away from `word`."
-    letters    = 'abcdefghijklmnopqrstuvwxyz'
-    splits     = [(word[:i], word[i:])    for i in range(len(word) + 1)]
-    deletes    = [L + R[1:]               for L, R in splits if R]
-    transposes = [L + R[1] + R[0] + R[2:] for L, R in splits if len(R)>1]
-    replaces   = [L + c + R[1:]           for L, R in splits if R for c in letters]
-    inserts    = [L + c + R               for L, R in splits for c in letters]
-    return set(deletes + transposes + replaces + inserts)
+    if word is not None and len(word) > 0:
+        letters    = 'abcdefghijklmnopqrstuvwxyz'
+        splits     = [(word[:i], word[i:])    for i in range(len(word) + 1)]
+        deletes    = [L + R[1:]               for L, R in splits if R]
+        transposes = [L + R[1] + R[0] + R[2:] for L, R in splits if len(R)>1]
+        replaces   = [L + c + R[1:]           for L, R in splits if R for c in letters]
+        inserts    = [L + c + R               for L, R in splits for c in letters]
+        return set(deletes + transposes + replaces + inserts)
+    return set([])
 	
 def edits2(word): 
     "All edits that are two edits away from `word`."
@@ -41,4 +43,4 @@ def edits2(word):
 def get_correct_word(word):
 	return next(iter(correction(word)[0]))
 	
-print(get_correct_word('dlhi'))
+#print(get_correct_word('dlhi'))

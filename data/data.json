@@ -11,7 +11,7 @@
       },
       {
         "name": "email",
-        "pattern": "< mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+ >$"
+        "pattern": "<mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+>$"
       },
       {
         "name": "greet",
@@ -121,6 +121,12 @@
         "value": "bangalore",
         "synonyms": [
           "bengaluru"
+        ]
+      },
+      {
+        "value": "chennai",
+        "synonyms": [
+          "madras"
         ]
       },
       {
@@ -258,6 +264,66 @@
       },
       {
         "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "fine. need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "fine, need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "excellent, need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "excellent. need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "great, need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "great. need information on restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "excellent. can you help me for restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "excellent, can you help me for booking restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "fine. can you help me for restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "fine, can you help me for booking restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "great. can you help me for restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "great, can you help me for booking restaurant",
         "intent": "restaurant_search",
         "entities": []
       },
@@ -459,7 +525,67 @@
           {
             "start": 0,
             "end": 12,
-            "value": "South Indian",
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "South",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "south",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "si",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "southindian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "madrasi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "south indian",
             "entity": "cuisine"
           }
         ]
@@ -471,7 +597,55 @@
           {
             "start": 0,
             "end": 12,
-            "value": "North Indian",
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "North",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "north",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "ni",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "northindian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "north indian",
             "entity": "cuisine"
           }
         ]
@@ -483,18 +657,18 @@
           {
             "start": 0,
             "end": 7,
-            "value": "Italian",
+            "value": "italian",
             "entity": "cuisine"
           }
         ]
       },
       {
-        "text": "italian",
+        "text": "it",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
-            "end": 7,
+            "end": 2,
             "value": "italian",
             "entity": "cuisine"
           }
@@ -549,6 +723,18 @@
         ]
       },
       {
+        "text": "mx",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
         "text": "mexican food",
         "intent": "restaurant_search",
         "entities": [
@@ -579,6 +765,42 @@
           {
             "start": 0,
             "end": 7,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "ch",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Chines",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "chines",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
             "value": "chinese",
             "entity": "cuisine"
           }
@@ -1908,7 +2130,7 @@
                 {
                   "start": 7,
                   "end": 10,
-                  "value": "200",
+                  "value": "500",
                   "entity": "price"
                 }
               ]
@@ -16537,6 +16759,150 @@
         ]
       },
       {
+              "text": "a",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "chinese",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "A",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "chinese",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "b",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "italian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "B",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "italian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "c",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "south indian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "C",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "south indian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "d",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "north indian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "D",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "north indian",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "e",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "mexican",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "E",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "mexican",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "f",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "american",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
+              "text": "F",
+              "intent": "restaurant_search",
+              "entities": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "value": "american",
+                  "entity": "cuisine"
+                }
+              ]
+      },
+      {
         "text": "american restaurant",
         "intent": "restaurant_search",
         "entities": [
@@ -16579,6 +16945,66 @@
           {
             "start": 0,
             "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "american",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "American",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "am",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "usa",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "us",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
             "value": "american",
             "entity": "cuisine"
           }
@@ -16867,73 +17293,73 @@
         ]
       },
       {
-        "text": "yes. please email all the details to this address: < mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
+        "text": "yes. please email all the details to this address: <mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
         "intent": "affirm",
         "entities": [
           {
-            "start": 82,
+            "start": 51,
             "end": 103,
-            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
+            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
+        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 52,
-            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com> ",
+            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >",
+        "text": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 50,
-            "value": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >",
+            "value": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >",
+        "text": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 54,
-            "value": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >",
+            "value": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
+        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 52,
-            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
+            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "can you please share the details on this id: < mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >",
+        "text": "can you please share the details on this id: <mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>",
         "intent": "affirm",
         "entities": [
           {
             "start": 45,
             "end": 115,
-            "value": "< mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >",
+            "value": "<mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>",
             "entity": "email"
           }
         ]

@@ -277,13 +277,69 @@ Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Rasa Core server is up and running on http://localhost:5005
 Rasa process starting
 Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_restaurant'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_restaurant'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to run custom action 'action_utter_fallback'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_utter_fallback'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to run custom action 'action_utter_fallback'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_utter_fallback'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Action 'action_check_cuisine' set a slot type 'cuisine' that it never set during the training. This can throw of the prediction. Make sure to include training examples in your stories for the different types of slots this action can return. Remember: you need to set the slots manually in the stories by adding '- slot{"cuisine": "chinese"}' after the action.
+Failed to run custom action 'action_restaurant'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_restaurant'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Available web server routes: 
-static                                             OPTIONS, GET, HEAD             /static/[filename]
-custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
-custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
 Rasa Core server is up and running on http://localhost:5005
 Creating a new tracker for id 'default'.
-Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9852380204428942}' and entities '[]'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9807712863507551}' and entities '[]'
 Logged UserUtterance - tracker now has 2 events
 Current slot values: 
 	cuisine: None
@@ -291,10 +347,276 @@ Current slot values:
 	location: None
 	location_found: None
 	price: None
+	restaurants_found: None
 Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
 There is a memorised next action '7'
 There is no active form
-Predicted next action using policy_2_MemoizationPolicy
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey there! How may i help you, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Find me restaurants' with intent '{'name': 'restaurant_search', 'confidence': 0.9977553801465433}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_location' with prob 1.00.
+Action 'utter_ask_location' ended with events '[]'
+Bot utterance 'BotUttered(text: In what location?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'delhi' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998983747859}' and entities '[{'start': 0, 'end': 5, 'value': 'delhi', 'entity': 'location', 'confidence': 0.9882054020756947, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: delhi
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '18'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_check_location' with prob 1.00.
+Calling action endpoint to run action 'action_check_location'.
+Action 'action_check_location' ended with events '['SlotSet(key: location, value: delhi)', 'SlotSet(key: location_found, value: found)']'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_cuisine' with prob 1.00.
+Action 'utter_ask_cuisine' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of cuisine would you like to have 
+ a. Chinese [Default] 
+ b. Italian 
+ c. South Indian 
+ d. North Indian 
+ e. Mexican 
+ f. American, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_cuisine': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'chinese' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998901193505}' and entities '[{'start': 0, 'end': 7, 'value': 'chinese', 'entity': 'cuisine', 'confidence': 0.9461674843757014, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: None
+	restaurants_found: None
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_cuisine': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_price' with prob 1.00.
+Action 'utter_ask_price' ended with events '[]'
+Bot utterance 'BotUttered(text: What's the average budget for two people 
+1. Lesser than 300 
+2. between 300 and 700
+3. More than 700, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_cuisine': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_utter_ask_price': 1.0, 'intent_restaurant_search': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'more than 700' with intent '{'name': 'restaurant_search', 'confidence': 0.9915845760417951}' and entities '[{'start': 0, 'end': 13, 'value': '701', 'entity': 'price', 'confidence': 0.9159276318717403, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: None
+Current tracker state [{'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_cuisine': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_utter_ask_price': 1.0, 'intent_restaurant_search': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '16'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restaurant' with prob 1.00.
+Calling action endpoint to run action 'action_restaurant'.
+Action 'action_restaurant' ended with events '['SlotSet(key: restaurants_found, value: found)']'
+Bot utterance 'BotUttered(text: Fetching results from Zomato, pls wait...
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: +--------------------------+--------+---------------------------+--------------+
+|           Name           | Rating |          Address          | Budget for 2 |
++==========================+========+===========================+==============+
+| Ah So Yum                | 4.900  | SF 29, 1st Floor, DLF     | 950          |
+|                          |        | Galleria, DLF Phase 4,    |              |
+|                          |        | Gurgaon                   |              |
++--------------------------+--------+---------------------------+--------------+
+| CIA Call it Asiian       | 4.800  | 13/14/15/16, Narmada      | 800          |
+|                          |        | Shopping Complex,         |              |
+|                          |        | Opposite Don Bosco        |              |
+|                          |        | School, Alaknanda Road,   |              |
+|                          |        | Greater Kailash 2 (GK 2), |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+
+| TCK By The China Kitchen | 4.600  | 11, Cyber Hub, DLF Cyber  | 1800         |
+|                          |        | City, Gurgaon             |              |
++--------------------------+--------+---------------------------+--------------+
+| Pa Pa Ya                 | 4.500  | Dome, Level 4, Select     | 2000         |
+|                          |        | Citywalk, A-3, District   |              |
+|                          |        | Centre, Saket, New Delhi  |              |
++--------------------------+--------+---------------------------+--------------+
+| Royal China              | 4.500  | 16th Floor, Eros          | 2200         |
+|                          |        | Corporate Tower, Nehru    |              |
+|                          |        | Place, New Delhi          |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | Shop 69, First floor,     | 1800         |
+|                          |        | Middle Lane, Khan Market, |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | 2nd Floor, Select         | 1800         |
+|                          |        | Citywalk Mall, Saket, New |              |
+|                          |        | Delhi                     |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | Cyber Hub, DLF Cyber      | 1800         |
+|                          |        | City, Gurgaon             |              |
++--------------------------+--------+---------------------------+--------------+
+| Enoki                    | 4.500  | Vasant Vihar, New Delhi   | 1000         |
++--------------------------+--------+---------------------------+--------------+
+| You Mee                  | 4.500  | M-27, Ground Floor,       | 1800         |
+|                          |        | Greater Kailash 2 (GK2),  |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_utter_ask_cuisine': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_utter_ask_price': 1.0, 'intent_restaurant_search': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_location_found_2': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_email' with prob 0.58.
+Action 'utter_ask_email' ended with events '[]'
+Bot utterance 'BotUttered(text: Do you want me send this as an email?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'prev_action_listen': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_utter_ask_price': 1.0, 'intent_restaurant_search': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_email': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.8301826556401757}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: found
+Current tracker state [{'slot_cuisine_0': 1.0, 'prev_utter_ask_price': 1.0, 'intent_restaurant_search': 1.0, 'entity_cuisine': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_email': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_ask_mailid' with prob 0.52.
+Action 'utter_ask_mailid' ended with events '[]'
+Bot utterance 'BotUttered(text: Share the recipient email address, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_email': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_mailid': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'abhinavravi125@gmail.com' with intent '{'name': 'affirm', 'confidence': 0.8154881254163756}' and entities '[{'start': 0, 'end': 24, 'value': 'abhinavravi125@gmail.com', 'entity': 'email', 'confidence': 0.49522005069907227, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	cuisine: chinese
+	email: abhinavravi125@gmail.com
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: found
+Current tracker state [{'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_email': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_mailid': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'email_restaurant_details' with prob 1.00.
+Calling action endpoint to run action 'email_restaurant_details'.
+Action 'email_restaurant_details' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure. Mail Sent!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_price_0': 1.0, 'entity_price': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_email': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_mailid': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_email_restaurant_details': 1.0, 'slot_email_0': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9807712863507551}' and entities '[]'
+Logged UserUtterance - tracker now has 41 events
+Current slot values: 
+	cuisine: chinese
+	email: abhinavravi125@gmail.com
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: found
+Current tracker state [{'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_mailid': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_email_restaurant_details': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_greet': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
 Predicted next action 'utter_greet' with prob 1.00.
 Action 'utter_greet' ended with events '[]'
 Bot utterance 'BotUttered(text: Hey, How is it going. How May I help you Today, data: {
@@ -302,15 +624,686 @@ Bot utterance 'BotUttered(text: Hey, How is it going. How May I help you Today, 
   "buttons": null,
   "attachment": null
 })'
-Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Current tracker state [{'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_utter_ask_mailid': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'slot_location_0': 1.0, 'entity_email': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0, 'prev_email_restaurant_details': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_greet': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}, {'slot_cuisine_0': 1.0, 'prev_utter_greet': 1.0, 'slot_price_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_greet': 1.0, 'slot_location_0': 1.0, 'slot_location_found_2': 1.0, 'slot_email_0': 1.0}]
 There is a memorised next action '0'
 There is no active form
-Predicted next action using policy_2_MemoizationPolicy
+Predicted next action using policy_1_MemoizationPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
 Rasa process starting
 Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to run custom action 'action_restaurant'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_restaurant'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
 Rasa process starting
 Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9878313303535109}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, How can I help you!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Help me find restaurants' with intent '{'name': 'restaurant_search', 'confidence': 0.9976120235854473}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_location' with prob 1.00.
+Action 'utter_ask_location' ended with events '[]'
+Bot utterance 'BotUttered(text: In what location?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'prev_utter_ask_location': 1.0, 'intent_restaurant_search': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'delhi' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998742545433}' and entities '[{'start': 0, 'end': 5, 'value': 'delhi', 'entity': 'location', 'confidence': 0.9882054020756947, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: delhi
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'prev_utter_ask_location': 1.0, 'intent_restaurant_search': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '18'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_check_location' with prob 1.00.
+Calling action endpoint to run action 'action_check_location'.
+Action 'action_check_location' ended with events '['SlotSet(key: location, value: delhi)', 'SlotSet(key: location_found, value: found)']'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'prev_utter_ask_location': 1.0, 'intent_restaurant_search': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_cuisine' with prob 1.00.
+Action 'utter_ask_cuisine' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of cuisine would you like to have 
+ a. Chinese [Default] 
+ b. Italian 
+ c. South Indian 
+ d. North Indian 
+ e. Mexican 
+ f. American, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'prev_utter_ask_location': 1.0, 'intent_restaurant_search': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_utter_ask_cuisine': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'chinese' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998916231486}' and entities '[{'start': 0, 'end': 7, 'value': 'chinese', 'entity': 'cuisine', 'confidence': 0.9461674843757014, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: None
+	restaurants_found: None
+Current tracker state [{'prev_utter_ask_location': 1.0, 'intent_restaurant_search': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_utter_ask_cuisine': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_price' with prob 1.00.
+Action 'utter_ask_price' ended with events '[]'
+Bot utterance 'BotUttered(text: What's the average budget for two people 
+1. Lesser than 300 
+2. between 300 and 700
+3. More than 700, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_utter_ask_cuisine': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'More than 300' with intent '{'name': 'restaurant_search', 'confidence': 0.9871726532590446}' and entities '[{'start': 0, 'end': 13, 'value': 'more than 300', 'entity': 'price', 'confidence': 0.870313814536791, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: more than 300
+	restaurants_found: None
+Current tracker state [{'prev_action_check_location': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_utter_ask_cuisine': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0}]
+There is a memorised next action '16'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restaurant' with prob 1.00.
+Calling action endpoint to run action 'action_restaurant'.
+Action 'action_restaurant' ended with events '['SlotSet(key: restaurants_found, value: notfound)']'
+Bot utterance 'BotUttered(text: Fetching results from Zomato, pls wait...
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: No restaurant found., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_ask_cuisine': 1.0, 'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0}, {'prev_action_restaurant': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'slot_restaurants_found_0': 1.0}]
+There is a memorised next action '15'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_final_bye' with prob 1.00.
+Action 'utter_final_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: Okay!Bon Appetit!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0}, {'slot_price_0': 1.0, 'prev_action_listen': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0}, {'prev_action_restaurant': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'slot_restaurants_found_0': 1.0}, {'slot_price_0': 1.0, 'slot_location_found_2': 1.0, 'entity_price': 1.0, 'slot_cuisine_0': 1.0, 'prev_utter_final_bye': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'slot_restaurants_found_0': 1.0}]
+There is a memorised next action '1'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restart' with prob 1.00.
+Calling action endpoint to run action 'action_restart'.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'cls' with intent '{'name': 'restaurant_search', 'confidence': 0.9967045732091268}' and entities '[{'start': 0, 'end': 3, 'value': 'cls', 'entity': 'location', 'confidence': 0.9705315056336357, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 35 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: cls
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_check_location' with prob 0.99.
+Calling action endpoint to run action 'action_check_location'.
+Action 'action_check_location' ended with events '['SlotSet(key: location, value: None)', 'SlotSet(key: location_found, value: notfound)']'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_0': 1.0, 'intent_restaurant_search': 1.0, 'entity_location': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_location_notfound' with prob 1.00.
+Action 'utter_location_notfound' ended with events '[]'
+Bot utterance 'BotUttered(text: Sorry, location not found. Please specify the location again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'prev_action_check_location': 1.0, 'slot_location_found_0': 1.0, 'intent_restaurant_search': 1.0, 'entity_location': 1.0}, {'slot_location_found_0': 1.0, 'prev_utter_location_notfound': 1.0, 'intent_restaurant_search': 1.0, 'entity_location': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9878313303535109}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hey, How is it going. How May I help you Today, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Find me a restaurant' with intent '{'name': 'restaurant_search', 'confidence': 0.9968611178542159}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_location' with prob 1.00.
+Action 'utter_ask_location' ended with events '[]'
+Bot utterance 'BotUttered(text: In what location?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'delhi' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998742545433}' and entities '[{'start': 0, 'end': 5, 'value': 'delhi', 'entity': 'location', 'confidence': 0.9882054020756947, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: delhi
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '18'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_check_location' with prob 1.00.
+Calling action endpoint to run action 'action_check_location'.
+Action 'action_check_location' ended with events '['SlotSet(key: location, value: delhi)', 'SlotSet(key: location_found, value: found)']'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_cuisine' with prob 1.00.
+Action 'utter_ask_cuisine' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of cuisine would you like to have 
+ a. Chinese [Default] 
+ b. Italian 
+ c. South Indian 
+ d. North Indian 
+ e. Mexican 
+ f. American, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'chinese' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998916231486}' and entities '[{'start': 0, 'end': 7, 'value': 'chinese', 'entity': 'cuisine', 'confidence': 0.9461674843757014, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: None
+	restaurants_found: None
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_price' with prob 1.00.
+Action 'utter_ask_price' ended with events '[]'
+Bot utterance 'BotUttered(text: What's the average budget for two people 
+1. Lesser than 300 
+2. between 300 and 700
+3. More than 700, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'More than 300' with intent '{'name': 'restaurant_search', 'confidence': 0.9871726532590446}' and entities '[{'start': 0, 'end': 13, 'value': 'more than 300', 'entity': 'price', 'confidence': 0.870313814536791, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: more than 300
+	restaurants_found: None
+Current tracker state [{'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '16'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restaurant' with prob 1.00.
+Calling action endpoint to run action 'action_restaurant'.
+Action 'action_restaurant' ended with events '['SlotSet(key: restaurants_found, value: notfound)']'
+Bot utterance 'BotUttered(text: Fetching results from Zomato, pls wait...
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: No restaurant found., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '15'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_final_bye' with prob 1.00.
+Action 'utter_final_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: Okay!Bon Appetit!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'prev_utter_final_bye': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '1'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restart' with prob 1.00.
+Calling action endpoint to run action 'action_restart'.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9878313303535109}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi, How can I help you!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'Find me restaurants' with intent '{'name': 'restaurant_search', 'confidence': 0.9981863592757683}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: None
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_location' with prob 1.00.
+Action 'utter_ask_location' ended with events '[]'
+Bot utterance 'BotUttered(text: In what location?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'delhi' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998742545433}' and entities '[{'start': 0, 'end': 5, 'value': 'delhi', 'entity': 'location', 'confidence': 0.9882054020756947, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 43 events
+Current slot values: 
+	cuisine: None
+	email: None
+	location: delhi
+	location_found: None
+	price: None
+	restaurants_found: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '18'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_check_location' with prob 1.00.
+Calling action endpoint to run action 'action_check_location'.
+Action 'action_check_location' ended with events '['SlotSet(key: location, value: delhi)', 'SlotSet(key: location_found, value: found)']'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_cuisine' with prob 1.00.
+Action 'utter_ask_cuisine' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of cuisine would you like to have 
+ a. Chinese [Default] 
+ b. Italian 
+ c. South Indian 
+ d. North Indian 
+ e. Mexican 
+ f. American, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0}, {'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'chinese' with intent '{'name': 'restaurant_search', 'confidence': 0.9999998916231486}' and entities '[{'start': 0, 'end': 7, 'value': 'chinese', 'entity': 'cuisine', 'confidence': 0.9461674843757014, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 51 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: None
+	restaurants_found: None
+Current tracker state [{'intent_restaurant_search': 1.0, 'prev_utter_ask_location': 1.0}, {'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '14'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_price' with prob 1.00.
+Action 'utter_ask_price' ended with events '[]'
+Bot utterance 'BotUttered(text: What's the average budget for two people 
+1. Lesser than 300 
+2. between 300 and 700
+3. More than 700, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'More than 700' with intent '{'name': 'restaurant_search', 'confidence': 0.992371928298483}' and entities '[{'start': 0, 'end': 13, 'value': '701', 'entity': 'price', 'confidence': 0.9159276318717403, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: None
+Current tracker state [{'slot_location_found_2': 1.0, 'prev_action_check_location': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0}, {'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '16'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restaurant' with prob 1.00.
+Calling action endpoint to run action 'action_restaurant'.
+Action 'action_restaurant' ended with events '['SlotSet(key: restaurants_found, value: found)']'
+Bot utterance 'BotUttered(text: Fetching results from Zomato, pls wait...
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: +--------------------------+--------+---------------------------+--------------+
+|           Name           | Rating |          Address          | Budget for 2 |
++==========================+========+===========================+==============+
+| Ah So Yum                | 4.900  | SF 29, 1st Floor, DLF     | 950          |
+|                          |        | Galleria, DLF Phase 4,    |              |
+|                          |        | Gurgaon                   |              |
++--------------------------+--------+---------------------------+--------------+
+| CIA Call it Asiian       | 4.800  | 13/14/15/16, Narmada      | 800          |
+|                          |        | Shopping Complex,         |              |
+|                          |        | Opposite Don Bosco        |              |
+|                          |        | School, Alaknanda Road,   |              |
+|                          |        | Greater Kailash 2 (GK 2), |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+
+| TCK By The China Kitchen | 4.600  | 11, Cyber Hub, DLF Cyber  | 1800         |
+|                          |        | City, Gurgaon             |              |
++--------------------------+--------+---------------------------+--------------+
+| Pa Pa Ya                 | 4.500  | Dome, Level 4, Select     | 2000         |
+|                          |        | Citywalk, A-3, District   |              |
+|                          |        | Centre, Saket, New Delhi  |              |
++--------------------------+--------+---------------------------+--------------+
+| Royal China              | 4.500  | 16th Floor, Eros          | 2200         |
+|                          |        | Corporate Tower, Nehru    |              |
+|                          |        | Place, New Delhi          |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | Shop 69, First floor,     | 1800         |
+|                          |        | Middle Lane, Khan Market, |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | 2nd Floor, Select         | 1800         |
+|                          |        | Citywalk Mall, Saket, New |              |
+|                          |        | Delhi                     |              |
++--------------------------+--------+---------------------------+--------------+
+| Yum Yum Cha              | 4.500  | Cyber Hub, DLF Cyber      | 1800         |
+|                          |        | City, Gurgaon             |              |
++--------------------------+--------+---------------------------+--------------+
+| Enoki                    | 4.500  | Vasant Vihar, New Delhi   | 1000         |
++--------------------------+--------+---------------------------+--------------+
+| You Mee                  | 4.500  | M-27, Ground Floor,       | 1800         |
+|                          |        | Greater Kailash 2 (GK2),  |              |
+|                          |        | New Delhi                 |              |
++--------------------------+--------+---------------------------+--------------+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_location_found_2': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_location': 1.0, 'prev_utter_ask_cuisine': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '23'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_email' with prob 1.00.
+Action 'utter_ask_email' ended with events '[]'
+Bot utterance 'BotUttered(text: Do you want me send this as an email?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'prev_utter_ask_email': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.8539114139324026}' and entities '[]'
+Logged UserUtterance - tracker now has 64 events
+Current slot values: 
+	cuisine: chinese
+	email: None
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: found
+Current tracker state [{'slot_cuisine_0': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_cuisine': 1.0, 'prev_utter_ask_price': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'prev_utter_ask_email': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_mailid' with prob 1.00.
+Action 'utter_ask_mailid' ended with events '[]'
+Bot utterance 'BotUttered(text: To what email address should I send the restaurant details, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'prev_action_listen': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'prev_utter_ask_email': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_utter_ask_mailid': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'abhinavravi125@gmail.com' with intent '{'name': 'affirm', 'confidence': 0.8422412830516377}' and entities '[{'start': 0, 'end': 24, 'value': 'abhinavravi125@gmail.com', 'entity': 'email', 'confidence': 0.49522005069907227, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 69 events
+Current slot values: 
+	cuisine: chinese
+	email: abhinavravi125@gmail.com
+	location: delhi
+	location_found: found
+	price: 701
+	restaurants_found: found
+Current tracker state [{'slot_cuisine_0': 1.0, 'prev_action_restaurant': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'prev_utter_ask_email': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_utter_ask_mailid': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'entity_email': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'slot_email_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '17'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'email_restaurant_details' with prob 1.00.
+Calling action endpoint to run action 'email_restaurant_details'.
+Action 'email_restaurant_details' ended with events '[]'
+Bot utterance 'BotUttered(text: Sure. Mail Sent!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'intent_restaurant_search': 1.0, 'slot_location_0': 1.0, 'prev_utter_ask_email': 1.0, 'entity_price': 1.0, 'slot_price_0': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_utter_ask_mailid': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'prev_action_listen': 1.0, 'entity_email': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'slot_email_0': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}, {'slot_cuisine_0': 1.0, 'slot_restaurants_found_1': 1.0, 'entity_email': 1.0, 'slot_location_0': 1.0, 'slot_price_0': 1.0, 'slot_email_0': 1.0, 'prev_email_restaurant_details': 1.0, 'intent_affirm': 1.0, 'slot_location_found_2': 1.0}]
+There is a memorised next action '1'
+There is no active form
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_restart' with prob 1.00.
+Calling action endpoint to run action 'action_restart'.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

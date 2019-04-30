@@ -56,7 +56,7 @@ templates:
   utter_default:
     - "default message"
   utter_ask_cuisine:
-    - text: "What kind of cuisine would you like to have \n 1. Chinese (ch) \n 2. Italian (it) \n 3. South Indian (si) \n 4. North Indian (ni) \n 5. Mexican (mx) \n 6. American (am)"
+    - text: "What kind of cuisine would you like to have \n a. Chinese [Default] \n b. Italian \n c. South Indian \n d. North Indian \n e. Mexican \n f. American"
   utter_ask_price:
     - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between 300 and 700\n3. More than 700"
   utter_ask_howcanhelp:
@@ -67,7 +67,7 @@ templates:
     - "Sorry, Foodie is not working in this area. Can you please suggest some other location"
   utter_ask_location:
     - "In what location?"
-  utter_ask_mail:
+  utter_ask_mailid:
     - "To what email address should I send the restaurant details"
     - "Share the recipient email address"
   utter_final_bye:
@@ -79,12 +79,11 @@ templates:
 actions:
 - utter_greet
 - utter_goodbye
-- utter_ask_email
 - utter_default
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
-- utter_ask_mail
+- utter_ask_mailid
 - utter_ask_price
 - utter_final_bye
 - action_restaurant
@@ -93,3 +92,6 @@ actions:
 - utter_location_notfound
 - utter_foodie_not_working
 - action_restart
+- action_utter_fallback
+- action_check_cuisine
+- utter_ask_email
