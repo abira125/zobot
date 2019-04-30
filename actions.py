@@ -73,7 +73,7 @@ class ActionSearchRestaurants(Action):
 		restaurants = results(loc, cuisine, price)
 		top10 = restaurants.head(10)
 		
-		# top 10 results to display
+		# top 5 results to display
 		if len(top10)>0:
 			t = Texttable()
 			t.header(['Name', 'Rating', 'Address', 'Budget for 2'])
