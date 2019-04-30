@@ -138,9 +138,33 @@ class Check_location(Action):
         return 'action_check_location'
 
     def run(self, dispatcher, tracker, domain):
+
+        city_dict = ['Ahmedabad', 'Bangalore', 'Chennai', 'Delhi', 'Hyderabad', 'Kolkata', 'Mumbai', 'Pune', 'Agra',
+                     'Ajmer',
+                     'Aligarh', 'Allahabad', 'Amravati', 'Amritsar', 'Asansol', 'Aurangabad', 'Bareilly', 'Belgaum',
+                     'Bhavnagar', 'Bhiwandi',
+                     'Bhopal', 'Bhubaneswar', 'Bikaner', 'Bokaro Steel City', 'Chandigarh', 'Coimbatore', 'Cuttack',
+                     'Dehradun', 'Dhanbad',
+                     'Durg-Bhilai Nagar', 'Durgapur', 'Erode', 'Faridabad', 'Firozabad', 'Ghaziabad', 'Gorakhpur',
+                     'Gulbarga', 'Guntur',
+                     'Gurgaon', 'Guwahati‚ Gwalior', 'Hubli-Dharwad', 'Indore', 'Jabalpur', 'Jaipur', 'Jalandhar',
+                     'Jammu', 'Jamnagar', 'Jamshedpur',
+                     'Jhansi', 'Jodhpur', 'Kannur', 'Kanpur', 'Kakinada', 'Kochi', 'Kottayam', 'Kolhapur', 'Kollam',
+                     'Kota', 'Kozhikode', 'Kurnool',
+                     'Lucknow', 'Ludhiana', 'Madurai', 'Malappuram', 'Mathura', 'Goa', 'Mangalore', 'Meerut',
+                     'Moradabad', 'Mysore', 'Nagpur', 'Nanded', 'Nashik',
+                     'Nellore', 'Noida', 'Palakkad', 'Patna', 'Pondicherry', 'Raipur', 'Rajkot', 'Rajahmundry',
+                     'Ranchi', 'Rourkela', 'Salem', 'Sangli', 'Siliguri',
+                     'Solapur', 'Srinagar', 'Sultanpur', 'Surat', 'Thiruvananthapuram', 'Thrissur', 'Tiruchirappalli',
+                     'Tirunelveli', 'Tiruppur', 'Ujjain', 'Vijayapura',
+                     'Vadodara', 'Varanasi', 'Vasai-Virar City', 'Vijayawada', 'Visakhapatnam', 'Warangal']
+
+        city_dict = [x.lower() for x in city_dict]
+
         loc = tracker.get_slot('location')
         if loc is not None and len(loc) > 0:
-            loc = get_correct_word(loc)  # use spell checker to make sure location is correct.
+            if loc.lower() not in city_dict:
+                loc = get_correct_word(loc)  # use spell checker to make sure location is correct.
             check = check_location(loc)
 
             return [SlotSet('location', check['location_new']), SlotSet('location_found', check['location_f'])]

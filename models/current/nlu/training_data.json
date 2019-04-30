@@ -1213,6 +1213,10 @@
       },
       {
         "intent": "deny",
+        "text": "no thanks"
+      },
+      {
+        "intent": "deny",
         "text": "i don't require it over mail. thanks"
       },
       {

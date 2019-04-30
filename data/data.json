@@ -1412,6 +1412,11 @@
         "entities": []
       },
       {
+        "text": "no thanks",
+        "intent": "deny",
+        "entities": []
+      },
+      {
         "text": "i don't require it over mail. thanks",
         "intent": "deny",
         "entities": []

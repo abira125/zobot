@@ -91,19 +91,19 @@ templates:
   - text: In what location?
   utter_ask_mailid:
   - text: To what email address should I send the restaurant details?
-  - text: Share the recipient email address
+  - text: Share the recipient email address.
   utter_ask_price:
   - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between\
       \ 300 and 700\n3. More than 700"
   utter_default:
-  - text: default message
+  - text: Default Message
   utter_final_bye:
   - text: Okay! Bon Appetit!
   utter_foodie_not_working:
   - text: Sorry, Foodie is not working in this area. Can you please suggest some other
       location?
   utter_goodbye:
-  - text: goodbye :(
+  - text: Good Bye :(
   - text: Bye-bye
   utter_greet:
   - text: Hey there! How may i help you?
