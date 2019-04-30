@@ -15,6 +15,7 @@ actions:
 - action_check_location
 - utter_location_notfound
 - utter_foodie_not_working
+- action_restart
 config:
   store_entities_as_slots: true
 entities:
@@ -44,10 +45,10 @@ slots:
     values:
     - chinese
     - italian
-    - north indian
     - south indian
-    - american
+    - north indian
     - mexican
+    - american
   email:
     auto_fill: true
     initial_value: null
@@ -67,15 +68,12 @@ slots:
   price:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - lesser than 300
-    - between 300 to 700
-    - more than 700
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_cuisine:
-  - text: "What kind of cuisine would you like to have \n 1. Chinese \n 2. Italian\
-      \ \n 3. South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
+  - text: "What kind of cuisine would you like to have \n 1. Chinese (ch) \n 2. Italian\
+      \ (it) \n 3. South Indian (si) \n 4. North Indian (ni) \n 5. Mexican (mx) \n\
+      \ 6. American (am)"
   utter_ask_howcanhelp:
   - text: how can I help you?
   utter_ask_location:

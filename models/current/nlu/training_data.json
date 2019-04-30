@@ -107,6 +107,22 @@
       },
       {
         "intent": "restaurant_search",
+        "text": "need information on restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "restaurant booking"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "need to book restaurant"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "need info on restaurants"
+      },
+      {
+        "intent": "restaurant_search",
         "text": "I want to grab lunch"
       },
       {
@@ -625,6 +641,36 @@
         "intent": "restaurant_search",
         "entities": [
           {
+            "start": 24,
+            "end": 28,
+            "value": "rome",
+            "entity": "location"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "699",
+            "entity": "price"
+          },
+          {
+            "start": 52,
+            "end": 59,
+            "value": "british",
+            "entity": "cuisine"
+          },
+          {
+            "start": 69,
+            "end": 73,
+            "value": "four",
+            "entity": "people"
+          }
+        ],
+        "text": "can you book a table in rome in moderate range with british food for four people"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
             "start": 0,
             "end": 8,
             "value": "american",
@@ -987,7 +1033,7 @@
           {
             "start": 22,
             "end": 37,
-            "value": "lesser than 300",
+            "value": "299",
             "entity": "price"
           }
         ],
@@ -999,7 +1045,7 @@
           {
             "start": 24,
             "end": 42,
-            "value": "between 300 to 700",
+            "value": "301",
             "entity": "price"
           }
         ],
@@ -1009,9 +1055,9 @@
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 24,
+            "start": 32,
             "end": 39,
-            "value": "between 300 to 700",
+            "value": "301",
             "entity": "price"
           }
         ],
@@ -1023,7 +1069,7 @@
           {
             "start": 55,
             "end": 68,
-            "value": "more than 700",
+            "value": "701",
             "entity": "price"
           }
         ],
@@ -1035,7 +1081,7 @@
           {
             "start": 55,
             "end": 59,
-            "value": "more than 700",
+            "value": "701",
             "entity": "price"
           }
         ],
@@ -1047,7 +1093,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "more than 700",
+            "value": "701",
             "entity": "price"
           }
         ],
@@ -1059,7 +1105,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "more than 700",
+            "value": "701",
             "entity": "price"
           }
         ],
@@ -1071,7 +1117,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "lesser than 300",
+            "value": "299",
             "entity": "price"
           }
         ],
@@ -1083,7 +1129,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "lesser than 300",
+            "value": "299",
             "entity": "price"
           }
         ],
@@ -1094,12 +1140,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 7,
-            "value": "between 300 to 700",
+            "end": 9,
+            "value": "600",
             "entity": "price"
           }
         ],
-        "text": "300-700"
+        "text": "300 - 700"
       },
       {
         "intent": "restaurant_search",
@@ -1107,7 +1153,7 @@
           {
             "start": 0,
             "end": 7,
-            "value": "between 300 to 700",
+            "value": "600",
             "entity": "price"
           }
         ],
@@ -1118,8 +1164,20 @@
         "entities": [
           {
             "start": 0,
+            "end": 9,
+            "value": "500",
+            "entity": "price"
+          }
+        ],
+        "text": "around 500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
             "end": 13,
-            "value": "more than 700",
+            "value": "701",
             "entity": "price"
           }
         ],
@@ -1131,7 +1189,7 @@
           {
             "start": 0,
             "end": 15,
-            "value": "lesser than 300",
+            "value": "299",
             "entity": "price"
           }
         ],
@@ -1143,7 +1201,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "lesser than 300",
+            "value": "299",
             "entity": "price"
           }
         ],
@@ -1155,11 +1213,839 @@
           {
             "start": 0,
             "end": 18,
-            "value": "between 300 to 700",
+            "value": "600",
             "entity": "price"
           }
         ],
         "text": "between 300 to 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "cheap"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "find me a cheap restaurent"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "699",
+            "entity": "price"
+          }
+        ],
+        "text": "find me a moderate range restaurent"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 39,
+            "end": 44,
+            "value": "delhi",
+            "entity": "location"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "701",
+            "entity": "price"
+          }
+        ],
+        "text": "search a list of costly restaurants in delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "701",
+            "entity": "price"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "value": "thai",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "find some costly restaurants for thai food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "701",
+            "entity": "price"
+          }
+        ],
+        "text": "costly"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "699",
+            "entity": "price"
+          }
+        ],
+        "text": "moderate"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "Pocket-Friendly"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "Pocket-Friendly restaurant"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "find a Pocket Friendly restaurant "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 20,
+            "value": "399",
+            "entity": "price"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "find pocket friendly restaurant in delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 40,
+            "end": 47,
+            "value": "chennai",
+            "entity": "location"
+          },
+          {
+            "start": 5,
+            "end": 20,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "find pocket friendly thai restaurant in chennai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "pocket friendly"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "pocket-friendly"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "pocket friendly restaurant less than 400 "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "600",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 600"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "900",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 900"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "1200",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 1200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "2000",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 2000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "2500",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 2500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "10000",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 10000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "12500",
+            "entity": "price"
+          }
+        ],
+        "text": "approx 12500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "600",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 600"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "900",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 900"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "1200",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 1200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "2000",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 2000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "2500",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 2500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "10000",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 10000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "12500",
+            "entity": "price"
+          }
+        ],
+        "text": "near about 12500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "600",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 600"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "900",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 900"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "1200",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 1200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "2000",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 2000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "2500",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 2500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "10000",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 10000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "12500",
+            "entity": "price"
+          }
+        ],
+        "text": "nearabout 12500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "around 200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "600",
+            "entity": "price"
+          }
+        ],
+        "text": "around 600"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "900",
+            "entity": "price"
+          }
+        ],
+        "text": "around 900"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "1200",
+            "entity": "price"
+          }
+        ],
+        "text": "around 1200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "2000",
+            "entity": "price"
+          }
+        ],
+        "text": "around 2000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "2500",
+            "entity": "price"
+          }
+        ],
+        "text": "around 2500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "10000",
+            "entity": "price"
+          }
+        ],
+        "text": "around 10000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "12500",
+            "entity": "price"
+          }
+        ],
+        "text": "around 12500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "399",
+            "entity": "price"
+          }
+        ],
+        "text": "cheap restaurants less than 350"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "490",
+            "entity": "price"
+          }
+        ],
+        "text": "less than 490"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "100",
+            "entity": "price"
+          }
+        ],
+        "text": "in between 90 and 100"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "701",
+            "entity": "price"
+          }
+        ],
+        "text": "costly restaurants "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "mumbai",
+            "entity": "location"
+          },
+          {
+            "start": 0,
+            "end": 9,
+            "value": "701",
+            "entity": "price"
+          }
+        ],
+        "text": "costliest restaurant of mumbai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "1"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "600",
+            "entity": "price"
+          }
+        ],
+        "text": "2"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "800",
+            "entity": "price"
+          }
+        ],
+        "text": "3"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "12323",
+            "entity": "price"
+          }
+        ],
+        "text": "12323"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "233",
+            "entity": "price"
+          }
+        ],
+        "text": "233"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "987",
+            "entity": "price"
+          }
+        ],
+        "text": "987"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "876",
+            "entity": "price"
+          }
+        ],
+        "text": "876"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "786",
+            "entity": "price"
+          }
+        ],
+        "text": "786"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "23456",
+            "entity": "price"
+          }
+        ],
+        "text": "23456"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "123",
+            "entity": "price"
+          }
+        ],
+        "text": "123"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "245",
+            "entity": "price"
+          }
+        ],
+        "text": "245"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "567",
+            "entity": "price"
+          }
+        ],
+        "text": "567"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 28,
+            "value": "700",
+            "entity": "price"
+          }
+        ],
+        "text": "price range greater than 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "1000",
+            "entity": "price"
+          }
+        ],
+        "text": "budget is less than 1000"
       },
       {
         "intent": "restaurant_search",
@@ -15897,31 +16783,72 @@
         "synonyms": [
           "Chinese",
           "Chines",
-          "chines"
+          "chines",
+          "ch"
+        ]
+      },
+      {
+        "value": "italian",
+        "synonyms": [
+          "it"
+        ]
+      },
+      {
+        "value": "south indian",
+        "synonyms": [
+          "south",
+          "southindian",
+          "si",
+          "madrasi"
+        ]
+      },
+      {
+        "value": "north indian",
+        "synonyms": [
+          "north",
+          "northindian",
+          "ni"
+        ]
+      },
+      {
+        "value": "mexican",
+        "synonyms": [
+          "mx"
+        ]
+      },
+      {
+        "value": "american",
+        "synonyms": [
+          "am",
+          "usa",
+          "us"
         ]
       },
       {
         "value": "vegetarian",
         "synonyms": [
           "veggie",
-          "vegg"
+          "vegg",
+          "veg"
         ]
       },
       {
         "value": "lesser than 300",
         "synonyms": [
           "<300",
+          "< 300",
           "less 300",
           "less than 300",
           "lower 300",
-          "300 or less"
+          "300 or less",
+          "lt 300"
         ]
       },
       {
         "value": "between 300 to 700",
         "synonyms": [
           "bw 300 and 700",
-          "300-700",
+          "300 - 700",
           "bw 300 & 700",
           "btw 300-700"
         ]
@@ -15930,6 +16857,7 @@
         "value": "more than 700",
         "synonyms": [
           ">700",
+          "> 700",
           "mt 700"
         ]
       },
@@ -15943,7 +16871,8 @@
       {
         "value": "mumbai",
         "synonyms": [
-          "bombay"
+          "bombay",
+          "bombai"
         ]
       },
       {

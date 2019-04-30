@@ -6,10 +6,10 @@ slots:
     values:
     - chinese
     - italian
-    - north indian
     - south indian
-    - american
+    - north indian
     - mexican
+    - american
   email:
     type: text
   location_found:
@@ -19,25 +19,25 @@ slots:
     - tier3
     - found
   price:
-    type: categorical
-    values:
-    - lesser than 300
-    - between 300 to 700
-    - more than 700
+    type: text
+    #values:
+    #- lesser than 300
+    #- between 300 to 700
+    #- more than 700
 
 entities:
-- location
-- cuisine
-- email
-- price
+  - location
+  - cuisine
+  - email
+  - price
 
 intents:
- - greet
- - affirm
- - deny
- - goodbye
- - thankyou
- - restaurant_search
+  - greet
+  - affirm
+  - deny
+  - goodbye
+  - thankyou
+  - restaurant_search
 
 
 templates:
@@ -50,28 +50,10 @@ templates:
     - "Bye-bye"
   utter_default:
     - "default message"
-  utter_ask_cuisine: 
-    - text: "What kind of cuisine would you like to have \n 1. Chinese \n 2. Italian \n 3. South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
-      # buttons:
-      # - title: "Chinese"
-      #   payload: "chinese"
-      # - title: "Italian"
-      #   payload: "italian"
-      # - title: "North Indian"
-      #   payload: "north indian"
-      # - title: "Thai"
-      #   payload: "thai"
-      # - title: "American"
-      #   payload: "american"
-  utter_ask_price: 
+  utter_ask_cuisine:
+    - text: "What kind of cuisine would you like to have \n 1. Chinese (ch) \n 2. Italian (it) \n 3. South Indian (si) \n 4. North Indian (ni) \n 5. Mexican (mx) \n 6. American (am)"
+  utter_ask_price:
     - text: "What's the average budget for two people \n1. Lesser than 300 \n2. between 300 and 700\n3. More than 700"
-      # buttons:
-      # - title: "lesser than 300"
-      #   payload: "lesser than 300"
-      # - title: "between 300 to 700"
-      #   payload: "between 300 to 700"
-      # - title: "more than 700"
-      #   payload: "more than 700"
   utter_ask_howcanhelp:
     - "how can I help you?"
   utter_location_notfound:
@@ -102,3 +84,4 @@ actions:
 - action_check_location
 - utter_location_notfound
 - utter_foodie_not_working
+- action_restart

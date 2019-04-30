@@ -18,6 +18,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 
 ## Generated Story 3324389960126450284
@@ -66,6 +67,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 	
 	## Generated Story -7632184459360953130
@@ -91,6 +93,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story 8289661407949714569
 * greet
@@ -141,10 +144,11 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story 3110645698589487639
 * greet
-    - utter_greet
+   - utter_greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "surat"}
@@ -162,6 +166,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 	
 	## Generated Story -553207644721354512
@@ -209,6 +214,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 ## Generated Story -5522066894453462499
 * greet
@@ -230,6 +236,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 	
 	## Generated Story 8674505029155364583
@@ -274,6 +281,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 ## Generated Story -2317942585815653083
 * greet
@@ -296,6 +304,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 	
 	## Generated Story 2919437782090380438
@@ -339,6 +348,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story -615680271207496431
 * greet
@@ -356,6 +366,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 ## Generated Story 2074771835537969354
 * greet
@@ -379,7 +390,7 @@
 	
 ## Generated Story 5215082574752881048
 * greet
-    - utter_greet
+   - utter_greet
 * restaurant_search{"cuisine": "italian", "location": "ptnsneha"}
     - slot{"cuisine": "italian"}
     - slot{"location": "ptnsneha"}
@@ -396,10 +407,11 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 ## Generated Story -4022652206655273989
 * greet
-    - utter_greet
+   - utter_greet
 * restaurant_search{"cuisine": "chinese", "location": "haridwar"}
     - slot{"cuisine": "chinese"}
     - slot{"location": "haridwar"}
@@ -438,6 +450,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 
 ## Generated Story -1994450606479987250
@@ -459,6 +472,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 	
 	## Generated Story -5349745634692191142
 * greet
@@ -503,6 +517,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story 4088517891962411609
 * greet
@@ -549,6 +564,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 	
 	## Generated Story 1530155811557584268
@@ -727,7 +743,7 @@
 
     ## Generated Story -6634767084668550773
 * greet
-    - utter_greet
+   - utter_greet
 * restaurant_search{"cuisine": "north indian", "location": "delhi"}
     - slot{"cuisine": "north indian"}
     - slot{"location": "delhi"}
@@ -741,6 +757,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story 877072109721225871
 * greet
@@ -760,6 +777,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story 877072109721225871
 * greet
@@ -779,6 +797,7 @@
 
 * deny
     - utter_final_bye
+    - action_restart
 
 ## Generated Story -496076962403225172
 * greet

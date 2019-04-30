@@ -40,3 +40,75 @@ Rasa Core server is up and running on http://localhost:5005
 Rasa process starting
 Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
 Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_check_location'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_check_location'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
+Categorical slot 'price' is set to a value ('between 300 and 700') that is not specified in the domain. Value will be ignored and the slot will behave as if no value is set. Make sure to add all values a categorical slot should store to the domain.
