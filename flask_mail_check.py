@@ -21,7 +21,7 @@ mail = Mail(app)
 
 def send_async_email(app, recipient, response):
      with app.app_context():
-          if '<mailto' in recipient:
+          if '< mailto' in recipient:
             recipient = recipient.split("|",1)[1]
             recipient = recipient.split(">",1)[0]
           print(recipient)

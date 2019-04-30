@@ -81,14 +81,17 @@ class ActionSearchRestaurants(Action):
 				cur_row = [row["restaurant_name"], row["restaurant_rating"], row["restaurant_address"],row["budget_for2people"]]
 				t.add_row(cur_row)
 			response=t.draw()
+			print(response)
+			dispatcher.utter_message(response)
+			tracker.current_slot_values()
+			return [SlotSet('restaurants_found','found')]
 		else:
 			response = 'No restaurant found'
 			dispatcher.utter_message(response + ". Restart from beginning with Greetings")
-			AllSlotsReset()
-			return [Restarted()]
+			return [SlotSet('restaurants_found','notfound')]
+        
 
-		dispatcher.utter_message(response)
-
+		
 
 
 class SendMail(Action):
@@ -96,8 +99,15 @@ class SendMail(Action):
 		return 'email_restaurant_details'
 		
 	def run(self, dispatcher, tracker, domain):
-		recipient = tracker.get_slot('email')
 
+		###
+		# custom prints
+		print("restaurants_found slot is {}".format(tracker.get_slot('restaurants_found')))
+		###
+		print("all slot values: {}".format(tracker.current_slot_values()))
+
+		recipient = tracker.get_slot('email')
+		
 		top10 = restaurants.head(10)
 		print("got this correct email is {}".format(recipient))
 		send_email(recipient, top10)

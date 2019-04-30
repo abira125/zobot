@@ -18,6 +18,11 @@ slots:
     - notfound
     - tier3
     - found
+  restaurants_found:
+    type: categorical
+    values:
+    - notfound
+    - found
   price:
     type: text
     #values:
@@ -67,11 +72,14 @@ templates:
     - "Share the recipient email address"
   utter_final_bye:
     - "Okay!Bon Appetit!"
+  utter_ask_email:
+    - "Do you want me send this as an email?"
 
     
 actions:
 - utter_greet
 - utter_goodbye
+- utter_ask_email
 - utter_default
 - utter_ask_howcanhelp
 - utter_ask_location

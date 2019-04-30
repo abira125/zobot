@@ -1,3 +1,100 @@
+## Generated Story -5728574425175391796
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - action_check_location
+    - slot{"location": "delhi"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+    - slot{"restaurants_found" : "found"}
+    - utter_ask_email
+* affirm{"email": "aiana.goyal@upgrad.com"}
+    - slot{"email": "aiana.goyal@upgrad.com"}
+    - email_restaurant_details
+    - utter_final_bye
+    - action_restart
+
+
+## Generated Story -5728574425175391799
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - action_check_location
+    - slot{"location": "bangalore"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_price
+* restaurant_search{"price": "lesser than 300"}
+    - slot{"price": "lesser than 300"}
+    - action_restaurant
+    - slot{"restaurants_found" : "notfound"}
+    - utter_final_bye
+    - action_restart
+    
+
+## Generated Story -5728574425175391798
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - action_check_location
+    - slot{"location": "delhi"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+    - utter_ask_email
+* affirm
+    - utter_ask_mail
+* affirm{"email": "aiana.goyal@upgrad.com"}
+    - slot{"email": "aiana.goyal@upgrad.com"}
+    - email_restaurant_details
+    - utter_final_bye
+    - action_restart
+
+## Generated Story -5728574425175391797
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - action_check_location
+    - slot{"location": "delhi"}
+    - slot{"location_found": "found"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "more than 700"}
+    - action_restaurant
+    - utter_ask_email
+* deny
+    - utter_final_bye
+    - action_restart
+
+
 ## Generated Story -5728574425175391795
 * greet
     - utter_greet
@@ -15,6 +112,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
+    - utter_ask_email
 
 * deny
     - utter_final_bye
@@ -38,6 +136,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
+    - utter_ask_email
 
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
@@ -64,7 +163,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -90,7 +189,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -115,7 +214,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -141,7 +240,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -163,7 +262,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -189,7 +288,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -211,7 +310,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -233,7 +332,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -257,7 +356,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
@@ -278,7 +377,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -301,7 +400,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -325,7 +424,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
@@ -345,7 +444,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -363,7 +462,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -381,7 +480,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm
     - utter_ask_mail
 * affirm{"email": "aiana.goyal@upgrad.com"}
@@ -404,7 +503,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -425,7 +524,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm
     - utter_ask_mail
 * affirm{"email": "aiana.goyal@upgrad.com"}
@@ -447,7 +546,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -469,7 +568,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -490,7 +589,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
@@ -514,7 +613,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -536,7 +635,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
@@ -561,7 +660,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -580,7 +679,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "aiana.goyal@upgrad.com"}
     - slot{"email": "aiana.goyal@upgrad.com"}
     - email_restaurant_details
@@ -601,7 +700,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -622,9 +721,8 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
+    - utter_ask_email
 
-* affirm
-    - utter_ask_mail
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -645,9 +743,7 @@
 * restaurant_search{"price": "lesser than 300"}
     - slot{"price": "lesser than 300"}
     - action_restaurant
-
-* affirm
-    - utter_ask_mail
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -667,9 +763,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
-* affirm
-    - utter_ask_mail
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -690,9 +784,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
-* affirm
-    - utter_ask_mail
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -713,9 +805,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
-* affirm
-    - utter_ask_mail
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -734,9 +824,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
-* affirm
-    - utter_ask_mail
+    - utter_ask_email
 * affirm{"email": "goyal.aiana@gmail.com"}
     - slot{"email": "goyal.aiana@gmail.com"}
     - email_restaurant_details
@@ -754,7 +842,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -774,7 +862,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -794,7 +882,7 @@
 * restaurant_search{"price": "between 300 to 700"}
     - slot{"price": "between 300 to 700"}
     - action_restaurant
-
+    - utter_ask_email
 * deny
     - utter_final_bye
     - action_restart
@@ -815,7 +903,7 @@
 * restaurant_search{"price": "more than 700"}
     - slot{"price": "more than 700"}
     - action_restaurant
-
+    - utter_ask_email
 * affirm
     - utter_ask_mail
 * affirm{"email": "aiana.goyal@upgrad.com"}

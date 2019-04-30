@@ -1045,7 +1045,7 @@
           {
             "start": 24,
             "end": 42,
-            "value": "301",
+            "value": "600",
             "entity": "price"
           }
         ],
@@ -1057,7 +1057,7 @@
           {
             "start": 32,
             "end": 39,
-            "value": "301",
+            "value": "600",
             "entity": "price"
           }
         ],
@@ -1158,18 +1158,6 @@
           }
         ],
         "text": "300-700 price range"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "500",
-            "entity": "price"
-          }
-        ],
-        "text": "around 500"
       },
       {
         "intent": "restaurant_search",
@@ -1728,6 +1716,18 @@
           }
         ],
         "text": "around 200"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "200",
+            "entity": "price"
+          }
+        ],
+        "text": "around 500"
       },
       {
         "intent": "restaurant_search",
@@ -16685,13 +16685,13 @@
         "intent": "affirm",
         "entities": [
           {
-            "start": 51,
+            "start": 82,
             "end": 103,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
             "entity": "email"
           }
         ],
-        "text": "yes. please email all the details to this address: <mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>"
+        "text": "yes. please email all the details to this address: < mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >"
       },
       {
         "intent": "affirm",
@@ -16699,11 +16699,11 @@
           {
             "start": 0,
             "end": 52,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com> ",
             "entity": "email"
           }
         ],
-        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>"
+        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >"
       },
       {
         "intent": "affirm",
@@ -16711,11 +16711,11 @@
           {
             "start": 0,
             "end": 50,
-            "value": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>",
+            "value": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >",
             "entity": "email"
           }
         ],
-        "text": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>"
+        "text": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >"
       },
       {
         "intent": "affirm",
@@ -16723,11 +16723,11 @@
           {
             "start": 0,
             "end": 54,
-            "value": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>",
+            "value": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >",
             "entity": "email"
           }
         ],
-        "text": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>"
+        "text": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >"
       },
       {
         "intent": "affirm",
@@ -16735,11 +16735,11 @@
           {
             "start": 0,
             "end": 52,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
             "entity": "email"
           }
         ],
-        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>"
+        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >"
       },
       {
         "intent": "affirm",
@@ -16747,17 +16747,17 @@
           {
             "start": 45,
             "end": 115,
-            "value": "<mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>",
+            "value": "< mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >",
             "entity": "email"
           }
         ],
-        "text": "can you please share the details on this id: <mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>"
+        "text": "can you please share the details on this id: < mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >"
       }
     ],
     "regex_features": [
       {
         "name": "email",
-        "pattern": "<mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+>$"
+        "pattern": "< mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+ >$"
       },
       {
         "name": "email",
@@ -16835,7 +16835,6 @@
       {
         "value": "lesser than 300",
         "synonyms": [
-          "<300",
           "< 300",
           "less 300",
           "less than 300",
@@ -16848,7 +16847,6 @@
         "value": "between 300 to 700",
         "synonyms": [
           "bw 300 and 700",
-          "300 - 700",
           "bw 300 & 700",
           "btw 300-700"
         ]
@@ -16856,7 +16854,6 @@
       {
         "value": "more than 700",
         "synonyms": [
-          ">700",
           "> 700",
           "mt 700"
         ]

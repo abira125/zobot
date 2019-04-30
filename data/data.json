@@ -11,7 +11,7 @@
       },
       {
         "name": "email",
-        "pattern": "<mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+>$"
+        "pattern": "< mailto:[a-zA-Z0-9_.+]+@[a-zA-Z]+[.][a-zA-Z0-9-.]+ >$"
       },
       {
         "name": "greet",
@@ -16867,73 +16867,73 @@
         ]
       },
       {
-        "text": "yes. please email all the details to this address: <mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+        "text": "yes. please email all the details to this address: < mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
         "intent": "affirm",
         "entities": [
           {
-            "start": 51,
+            "start": 82,
             "end": 103,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 52,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com> ",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>",
+        "text": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 50,
-            "value": "<mailto:goyal.aian@gmail.com|goyal.aian@gmail.com>",
+            "value": "< mailto:goyal.aian@gmail.com|goyal.aian@gmail.com >",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>",
+        "text": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 54,
-            "value": "<mailto:aianagoel002@gmail.com|aianagoel002@gmail.com>",
+            "value": "< mailto:aianagoel002@gmail.com|aianagoel002@gmail.com >",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+        "text": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
         "intent": "affirm",
         "entities": [
           {
             "start": 0,
             "end": 52,
-            "value": "<mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com>",
+            "value": "< mailto:goyal.aiana@gmail.com|goyal.aiana@gmail.com >",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "can you please share the details on this id: <mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>",
+        "text": "can you please share the details on this id: < mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >",
         "intent": "affirm",
         "entities": [
           {
             "start": 45,
             "end": 115,
-            "value": "<mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com>",
+            "value": "< mailto:bdjnjnwsnak128_bcjd@ndjskk.com|bdjnjnwsnak128_bcjd@ndjskk.com >",
             "entity": "email"
           }
         ]
