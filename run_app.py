@@ -1,10 +1,3 @@
-# input_channel = SlackInput('xoxp-609656943046-594287361475-609338617687-764a996e985d0651d4e688f7fdd7bccc',
-# 							'xoxb-609656943046-599490439985-37Q7nhNcH2plLlkrSSWKGDom',
-# 							'nkWJYcOOd01qnGssI7FwJ100',
-# 							'True'
-# 							)
-
-
 
 
 
