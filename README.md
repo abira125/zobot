@@ -1,10 +1,8 @@
-# UpGrad Chatbot for restaurant search
-# Team: Abhinav Ravi, Anupam Mukherjee, Vibhor Jain
+# Chatbot for restaurant search
 
 ### Introduction
 
-This bot searches for restaurants and gives them to us as a list
-
+In a coversation with the user, this bot gathers the kind of restaurant they are looking for, in terms of cuisine, budget and location. It then uses Zomato APIs to get the relevant restaurants and forwards it to the user's email    
 
 ### Installation
 
