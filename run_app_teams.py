@@ -11,10 +11,8 @@ action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
 agent = Agent.load('./models/current/dialogue', interpreter = nlu_interpreter, action_endpoint = action_endpoint)
 
 input_channel = WebexTeamsInput(
-    access_token="N2E4MDkxZmEtZTlkNy00ZjBjLWJjNWYtNGU4MzZmNzZjZTIzZjE3YTM1MTQtNjAx_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f",
-    # this is the `bot access token`
-    room="Y2lzY29zcGFyazovL3VzL1JPT00vYWFjOGIyNzEtZGNmMi0zYmQwLWI4ZWEtY2RjYTBkMjc1MjQ4"
-    # the name of your channel to which the bot posts (optional)
+    access_token=# this is the `bot access token`
+    room=# the name of your channel to which the bot posts (optional)
 )
 
 # set serve_forever=True if you want to keep the server running
