@@ -1,8 +1,18 @@
-# Chatbot for restaurant search
+# Zobot: Restaurant Chatbot
 
 ### Introduction
 
-In a coversation with the user, this bot gathers the kind of restaurant they are looking for, in terms of cuisine, budget and location. It then uses Zomato APIs to get the relevant restaurants and forwards it to the user's email    
+This is a restaurant chatbot that helps the user to find a resturant of his/her liking based on their food preferences 
+
+It engages the user in a conversation to understand the preferences based on following parameters:
+1) Cuisine
+2) Budget
+3) Location
+
+It passes on this information to [Zomato's](https://www.zomato.com/who-we-are) (one of the largest food aggregators) APIs to fetch the relevant restaurants. The top 5 restaurants are then served to the user through chat. The user can also ask the list to be sent through email.
+
+### Demo
+A short 6 minute demo can be found [here](https://www.youtube.com/watch?v=VAp8tO254Yc) highlighting the various flows and [Slack](https://slack.com/intl/en-in/) 
 
 ### Installation
 
