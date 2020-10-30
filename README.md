@@ -1,4 +1,7 @@
-# Zobot: Restaurant Chatbot
+![logo](bot.PNG)
+
+# Zobot: A Restaurant Chatbot
+Works with [Zomato](https://www.zomato.com/who-we-are) and [Slack](https://slack.com/intl/en-in/) to get your favourite local restaurants
 
 ### Introduction
 
@@ -9,10 +12,10 @@ It engages the user in a conversation to understand the preferences based on fol
 2) Budget
 3) Location
 
-It passes on this information to [Zomato's](https://www.zomato.com/who-we-are) (one of the largest food aggregators) APIs to fetch the relevant restaurants. The top 5 restaurants are then served to the user through chat. The user can also ask the list to be sent through email.
+It passes on this information to [Zomato's APIs](https://developers.zomato.com/documentation) to fetch the relevant restaurants. The top 5 restaurants are then served to the user through chat. The user can also ask the list to be sent through email.
 
 ### Demo
-A short 6 minute demo can be found [here](https://www.youtube.com/watch?v=VAp8tO254Yc) highlighting the various flows and [Slack](https://slack.com/intl/en-in/) 
+A short 6 minute demo can be found [here](https://www.youtube.com/watch?v=VAp8tO254Yc) highlighting the various flows and Slack integration
 
 ### Installation
 
