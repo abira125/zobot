@@ -5,9 +5,9 @@ Works with [Zomato](https://www.zomato.com/who-we-are) and [Slack](https://slack
 
 ### Introduction
 
-This is a restaurant chatbot that helps the user to find a resturant of his/her liking based on their food preferences 
+This is a restaurant chatbot that helps the user to find a resturant of his/her liking based on food preferences 
 
-It engages the user in a conversation to understand the preferences based on following parameters:
+It engages the user in a conversation to understand the following preferences:
 1) Cuisine
 2) Budget
 3) Location
