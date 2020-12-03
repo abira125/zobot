@@ -1,4 +1,4 @@
-![logo](bot.PNG)
+![logo](docs/images/bot.PNG)
 
 # Zobot: A Restaurant Chatbot
 Works with [Zomato](https://www.zomato.com/who-we-are) and [Slack](https://slack.com/intl/en-in/) to get your favourite local restaurants
