@@ -113,7 +113,7 @@ twilio==6.26.1
 Twisted==19.2.0
 typing==3.6.6
 tzlocal==1.5.1
-ujson==1.35
+ujson==5.2.0
 urllib3==1.24.1
 wcwidth==0.1.7
 webexteamssdk==1.1.1
